@@ -13,12 +13,12 @@ const projectSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
-    required: true, // Relación obligatoria con un usuario
+    required: true,
   },
   tasks: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Task", // Relación con tareas
+      ref: "Task",
     },
   ],
   createdAt: {

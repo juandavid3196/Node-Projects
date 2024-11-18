@@ -17,7 +17,7 @@ const taskSchema = new mongoose.Schema({
   project: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Project",
-    required: true, // Cada tarea debe estar asociada a un proyecto
+    required: true,
   },
   createdAt: {
     type: Date,

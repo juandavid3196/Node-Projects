@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 
-// Definición del esquema de usuario
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -24,5 +23,4 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-// Exportar el modelo
 module.exports = mongoose.model("User", userSchema);

@@ -6,7 +6,6 @@ const projectRoutes = require("./routes/projects");
 
 const app = express();
 
-// Conectar a la base de datos
 connectDB();
 
 // Middlewares
