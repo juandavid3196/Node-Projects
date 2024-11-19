@@ -1,6 +1,5 @@
 const Project = require("../models/project");
 
-// Obtener todas las proyectos
 const getProjects = async (req, res) => {
   try {
     const Projects = await Project.find();
@@ -9,7 +8,7 @@ const getProjects = async (req, res) => {
     res.status(500).json({ error: "Error al obtener las proyectos" });
   }
 };
-// Crear una proyecto
+
 const createProject = async (req, res) => {
   try {
     const newProject = new Project(req.body);
@@ -20,7 +19,6 @@ const createProject = async (req, res) => {
   }
 };
 
-// Actualizar una proyecto
 const updateProject = async (req, res) => {
   try {
     const updatedProject = await Project.findByIdAndUpdate(
@@ -36,7 +34,6 @@ const updateProject = async (req, res) => {
   }
 };
 
-// Eliminar una proyecto
 const deleteProject = async (req, res) => {
   try {
     await Project.findByIdAndDelete(req.params.id);

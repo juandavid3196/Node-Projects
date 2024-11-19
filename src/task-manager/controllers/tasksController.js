@@ -1,6 +1,5 @@
 const Task = require("../models/task");
 
-// Obtener todas las tareas
 const getTasks = async (req, res) => {
   try {
     const tasks = await Task.find();
@@ -10,7 +9,6 @@ const getTasks = async (req, res) => {
   }
 };
 
-// Crear una tarea
 const createTask = async (req, res) => {
   try {
     const newTask = new Task(req.body);
@@ -21,7 +19,6 @@ const createTask = async (req, res) => {
   }
 };
 
-// Actualizar una tarea
 const updateTask = async (req, res) => {
   try {
     const updatedTask = await Task.findByIdAndUpdate(req.params.id, req.body, {
@@ -33,7 +30,6 @@ const updateTask = async (req, res) => {
   }
 };
 
-// Eliminar una tarea
 const deleteTask = async (req, res) => {
   try {
     await Task.findByIdAndDelete(req.params.id);

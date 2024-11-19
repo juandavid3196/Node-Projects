@@ -9,13 +9,13 @@ const app = express();
 // Middleware
 app.use(express.json());
 
-// servidor HTTP
+// HTTP server
 const server = http.createServer(app);
 
-//WebSocket
+// WebSocket
 const wss = new WebSocket.Server({ server });
 
-// Conexión a MongoDB
+// Mongodb connection
 
 connectDB();
 

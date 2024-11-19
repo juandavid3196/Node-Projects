@@ -2,7 +2,6 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const { User } = require("../models");
 
-// Registro de usuario
 const register = async (req, res) => {
   try {
     const { username, password, role } = req.body;
@@ -13,7 +12,6 @@ const register = async (req, res) => {
   }
 };
 
-// Inicio de sesión
 const login = async (req, res) => {
   try {
     const { username, password } = req.body;
@@ -36,7 +34,6 @@ const login = async (req, res) => {
   }
 };
 
-// Ruta protegida de ejemplo
 const protectedRoute = (req, res) => {
   res.json({
     message: `Hola, ${req.user.username}. Esta es una ruta protegida.`,

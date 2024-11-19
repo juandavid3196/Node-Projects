@@ -11,12 +11,12 @@ connectDB();
 // Middlewares
 app.use(express.json());
 
-// Rutas
+// Routes
 app.use("/api/tasks", taskRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/projects", projectRoutes);
 
-// Servidor
+// Server
 const PORT = 5000;
 app.listen(PORT, () =>
   console.log(`Servidor corriendo en http://localhost:${PORT}`)

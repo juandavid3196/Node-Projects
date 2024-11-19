@@ -20,7 +20,6 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
-  // Hash de contraseña antes de guardar
   User.beforeCreate(async (user) => {
     user.password = await bcrypt.hash(user.password, 10);
   });

@@ -1,6 +1,5 @@
 const User = require("../models/user");
 
-// Obtener todas las usuarios
 const getUsers = async (req, res) => {
   try {
     const Users = await User.find();
@@ -9,7 +8,7 @@ const getUsers = async (req, res) => {
     res.status(500).json({ error: "Error al obtener las usuarios" });
   }
 };
-// Crear una usuario
+
 const createUser = async (req, res) => {
   try {
     const newUser = new User(req.body);
@@ -20,7 +19,6 @@ const createUser = async (req, res) => {
   }
 };
 
-// Actualizar una usuario
 const updateUser = async (req, res) => {
   try {
     const updatedUser = await User.findByIdAndUpdate(req.params.id, req.body, {
@@ -32,7 +30,6 @@ const updateUser = async (req, res) => {
   }
 };
 
-// Eliminar una usuario
 const deleteUser = async (req, res) => {
   try {
     await User.findByIdAndDelete(req.params.id);

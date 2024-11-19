@@ -1,7 +1,6 @@
 const ChatRoom = require("../models/ChatRoom");
 const Message = require("../models/Message");
 
-// Obtener todas las salas de chat
 const getChatRooms = async (req, res) => {
   try {
     const rooms = await ChatRoom.find();
@@ -11,7 +10,6 @@ const getChatRooms = async (req, res) => {
   }
 };
 
-// Crear una nueva sala de chat
 const createChatRoom = async (req, res) => {
   try {
     const { name } = req.body;
@@ -28,7 +26,6 @@ const createChatRoom = async (req, res) => {
   }
 };
 
-// Obtener mensajes por sala
 const getMessagesByRoom = async (req, res) => {
   try {
     const { roomId } = req.params;
