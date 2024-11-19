@@ -1,7 +1,7 @@
 # Node-Projects
 
 ## 1. Task Manager API
-A RESTful API designed for performing CRUD (Create, Read, Update, Delete) operations on a collection of tasks, users and proyects. This project is ideal for managing tasks efficiently, providing endpoints for creating, reading, updating, and deleting tasks, users and proyects.
+A RESTful API designed to perform CRUD (Create, Read, Update, Delete) operations on tasks, users, and projects. This project is ideal for efficiently managing tasks and provides endpoints for creating, reading, updating, and deleting tasks, users, and projects.s.
 
 ### Project Features
 
@@ -9,26 +9,28 @@ A RESTful API designed for performing CRUD (Create, Read, Update, Delete) operat
 * Create new tasks, users and proyects with attributes like title, description, and status, email, password and more.
 * Retrieve a list of all tasks, users or projects or a specific element.
 * Update existing elements.
-* Delete them.
+* Delete elements.
   
 #### Database Integration
-* Utilizes MongoDB for persistent elements storage.
+* Utilizes MongoDB for persistent data storage.
 
 #### Modular Architecture
-* Code is organized into controllers, routes, models, and configuration files.
+* The codebase is organized into controllers, routes, models, and configuration files for better scalability and maintainability.
 
 #### Data Validation
-* Uses Mongoose to validate data before saving it to the database.
+* Leverages Mongoose for data validation before saving to the database.
 
 #### Schema Integration
-* Integrate different Schemas by id and connect your database.
+*Connects multiple schemas by ID to establish relationships within the database.
 
 ### Libraries used
 
 * **Express** Framework to handle routes and HTTP requests.
 * **Mongoose** ORM to interact with MongoDB in a structured and efficient manner
+<br>
 
-
+<img src="https://github.com/user-attachments/assets/448fecb0-02dc-4aa2-87d2-d706427d4509" alt="diagram-export-19-11-2024-11_17_29" width="500" />
+<br><br>
 
 ## 2. Real-Time Chat Server
 
@@ -51,9 +53,11 @@ A real-time chat application built using WebSockets, enabling multiple users to 
 ### Libraries used
 
 * **Express** Framework to handle routes and HTTP requests.
-* **socket.io** Enables real-time communication using WebSocket.
+* **http**  module to create HTTP servers for handling web requests and responses..
 * **ws** Enabling real-time, bidirectional communication between clients and servers.
-
+<br>
+<img src="https://github.com/user-attachments/assets/1c4e2043-54a3-4e7b-b0a0-ffc9b21f2a93" alt="diagram-export-19-11-2024-14_14_37" width="500" />
+<br><br>
 
 ## 3. Basic Authentication and Authorization
 
@@ -80,7 +84,9 @@ A secure application to manage user registration, login, and role-based authoriz
 * **jsonwebtoken** JSON Web Tokens (JWT) for session management.
 * **sequelize** ORM for managing database interactions.
 * **sqlite** Providing fast, lightweight, and serverless database functionality.
-
+<br>
+<img src="https://github.com/user-attachments/assets/259e7756-7738-49d0-a1e5-c08551e0da6f" alt="diagram-export-19-11-2024-13_43_41" width="500" />
+<br><br>
 
 ## 4. PDF Report Generator
 
@@ -105,6 +111,10 @@ A system that dynamically generates personalized PDF reports based on user-input
 * **Express** Framework to handle routes and HTTP requests.
 * **pdfkit** 	Tool for generating PDFs dynamically.
 * **body-parser** Middleware for parsing JSON request payloads.
+<br>
+<img src="https://github.com/user-attachments/assets/29346d2b-3c06-46e9-a57b-42725f0b6fee" alt="diagram-export-19-11-2024-13_57_29" width="500" />
+<br><br>
+
 
 
 
